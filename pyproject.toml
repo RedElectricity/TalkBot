@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "TalkBot"
+version = "0.1.0"
+description = ""
+authors = ["RedElectricity <redelectricity@unaltered.xyz>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fuzzywuzzy = "^0.18.0"
+jieba = "^0.42.1"
+httpx = "^0.18.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

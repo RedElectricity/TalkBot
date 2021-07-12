@@ -9,6 +9,7 @@ python = "^3.9"
 fuzzywuzzy = "^0.18.0"
 jieba = "^0.42.1"
 httpx = "^0.18.2"
+PyYAML = "^5.4.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

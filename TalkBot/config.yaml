@@ -1,0 +1,8 @@
+Bot:
+  Name: "ChiBot"
+
+  Local: "深圳"
+
+Wording:
+  #不想回答
+  dwta: "喂喂喂,你烦不烦啊"

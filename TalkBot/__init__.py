@@ -11,6 +11,7 @@ import jieba #结巴分词
 import pickle #持久化
 import httpx #网络交互
 import yaml #配置文件需要的模块
+import random
 
 #导入设置
 config = yaml.load(open("config,yaml",'r'),Loader=yaml.FullLoader())
@@ -23,9 +24,10 @@ async def Talk(UserID:int ,Message:str):
         if len(user_data[UserID]) > 1:
             #判断是否是已经回答过的问题
             if fuzz(Message,user_data[UserID][len(user_data[UserID])-1]) >= 80:
-               return config['Wording']['dwta'] 
+               return random.sample(config['Wording']['dwta'],1)[0] 
             else:
                 #这里是回答参数
                 pass
     else:
-        pass
+        user_data[UserID] = []
+        user_data[UserID].append(Message)

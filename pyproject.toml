@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "TalkBot"
 version = "0.1.0"
-description = ""
+description = "Hi,TalkBot~"
 authors = ["RedElectricity <redelectricity@unaltered.xyz>"]
 
 [tool.poetry.dependencies]
@@ -10,6 +10,7 @@ fuzzywuzzy = "^0.18.0"
 jieba = "^0.42.1"
 httpx = "^0.18.2"
 PyYAML = "^5.4.1"
+tensorflow = "^2.5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

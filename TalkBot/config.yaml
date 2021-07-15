@@ -1,8 +1,12 @@
 Bot:
   Name: "ChiBot"
-
   Local: "深圳"
 
 Wording:
   #不想回答
-  dwta: "喂喂喂,你烦不烦啊"
+  dwta: 
+    - "喂喂喂,你烦不烦啊"
+    - "RNM,你好烦哦"
+
+API:
+  weather: "1234"
